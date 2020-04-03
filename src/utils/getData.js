@@ -1,5 +1,4 @@
 const request = require('request');
-const chalk = require('chalk');
 const key = require('./keys/key');
 
 const getData = (location, callback) => {
