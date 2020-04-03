@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index Page</title>
+    <link rel="icon" href="./img/covid19.jpg">
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="main-content">
+      {{>header}}
+      <p>A website that tracks the Covid-19 Virus.</p>
+      <form>
+        <input placeholder="Location: CA">
+        <button>Search</button>
+      </form>
+
+      <p id="message-1"></p>
+      <p id="message-2"></p>
+    </div>
+    {{>footer}}
+    <script src="./js/app.js"></script>
+  </body>
+</html>
