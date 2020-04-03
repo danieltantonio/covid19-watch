@@ -25,7 +25,7 @@ covidForm.addEventListener('submit', (e) => {
 
   const location = search.value.toUpperCase();
 
-  fetch(`http://localhost:3000/covid?address=${location}`).then((response) => {
+  fetch(`/covid?address=${location}`).then((response) => {
     response.json().then((data) => {
       if(data.error) {
         messageTwo.textContent = data.error;
