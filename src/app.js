@@ -2,9 +2,9 @@ const express = require('express');
 const path = require('path');
 const hbs = require('hbs');
 const getData = require('./utils/getData');
-const PORT = process.env.PORT || 3000;
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // Define paths for Express config
 const pubDir = path.join(__dirname, '../public');
@@ -74,6 +74,6 @@ app.get('*', (req, res) => {
 
 // Start server
 
-app.listen(PORT, () => {
+app.listen(port, () => {
   console.log(`Server started and running on port: ${PORT}`);
 });
